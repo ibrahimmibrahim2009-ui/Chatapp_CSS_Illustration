@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(270, 20%, 96%);
+  font-family: "Rubik";
+}
+.circle {
+  width: 50vw; 
+  height: 450px;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  border-bottom-right-radius: 100% 50%;
+  background-image: linear-gradient( to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+.mobile {
+  background-color: hsl(0, 100%, 100%);
+  width: 70%;
+  height: 573px;
+  margin: 50px auto;
+  border-radius: 30px;
+  /* display: flex; */
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+  box-shadow: 11px 17px 15px -3px rgba(0, 0, 0, 0.26);
+}
+.top {
+  width: 60%;
+  height: 30px;
+  background-color: hsl(0, 100%, 100%);
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translatex(50%);
+  margin: auto;
+  border-radius: 0 0 20px 20px;
+  z-index: 3;
+}
+
+.person {
+  background-image: linear-gradient( to bottom left,hsl(300, 100%, 70%), hsl(262, 100%, 69%) );
+  border-radius: 20px 20px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding: 30px 10px 20px 10px;
+  z-index: 2;
+}
+
+.person div {
+  display: flex;
+  align-items: center;
+}
+
+.person p {
+  font-size: 10px;
+  color: hsl(206, 6%, 79%);
+  font-weight: 500;
+}
+
+.person .name-image {
+  margin-left: 5px;
+  margin-right: 80px;
+}
+
+.person img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+  border: 2px solid hsl(270, 7%, 64%)
+}
+
+.person .name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.three-dots, .back-arrow {
+  font-weight: bold;
+}
+
+
+
+
+.chat {
+  background-color: hsl(270, 20%, 96%);
+  border-radius: 0px 0px 30px 30px;
+  padding: 25px 10px 15px;
+  margin-top: -10px;
+  display: flex; 
+  flex-direction: column;
+
+}
+
+.left {
+  background-color:hsl(293, 100%, 90%);
+  border-radius: 15px 15px 15px 0;
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 70%;
+  font-size: 10px;
+  color: hsl(320, 55%, 40%);
+}
+
+.left.second {
+  margin-bottom: 15px;
+}
+
+.dogs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: flex-end;
+  width: 70%;
+}
+
+.dogs img {
+  width: 40px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 8px;
+  margin-bottom: 5px
+}
+.dogs img:last-child {
+  margin-right: 0;
+}
+
+.right {
+  background-color: white;
+  display: flex;
+  align-self: flex-end;
+  width: 60%;
+  font-size: 10px;
+  padding: 10px;
+  border-radius: 15px 15px 0;
+  margin-bottom: 5px;
+  color: hsl(270, 7%, 64%)
+}
+.right.second {
+  margin-bottom: 15px
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px
+}
+
+.buttons div {
+  background-image: linear-gradient( to bottom left,hsl(300, 100%, 70%), hsl(262, 100%, 69%) );
+  width: 80%;
+  margin-bottom: 7px;
+  padding: 10px;
+  border-radius: 12px 12px 12px 0;
+  position: relative;
+  font-family: "Rubik";
+}
+
+.buttons label {
+  padding-left: 20px;
+  font-size: 10px;
+  display: flex;
+  color: white;
+}
+
+.buttons input[type="radio"] {
+  display: none;
+}
+.buttons label::before {
+  content:"";
+  position: absolute;
+  width: 10px;
+  height: 10px; 
+  border: 1px solid hsl(289, 100%, 72%);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px
+}
+
+.buttons span {
+  position: absolute;
+  right: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white
+}
+
+.buttons input[type="radio"]:checked + label::after {
+  content:"";
+  background-color: blue;
+  position: absolute;
+  width: 15px;
+  height: 15px; 
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px
+}
+
+form input[type="text"] {
+  width: 100%;
+  border-radius: 35px;
+  padding: 10px;
+  font-size: 10px;
+  position: relative;
+  color: hsl(206, 6%, 79%);
+  border: none
+}
+form .send {
+  position: relative;
+}
+form .send-btn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  background-color: hsl(271, 36%, 32%);
+  color: white;
+  border: none;
+}
+
+.final {
+  margin-top: 70px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.final h1 {
+  margin-bottom: 15px;
+  color: hsl(271, 36%, 32%)
+}
+.final h6 {
+  color: hsl(270, 7%, 64%);
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1044px) {
+  body {
+    position: relative;
+  }
+  .circle {
+    width: 30vw;
+    height: 650px;
+    border-radius: 0 0 250px 250px;
+    position: absolute;
+    top: 0;
+    left: -30px
+}
+  .mobile {
+    width: 20%;
+    position: absolute;
+    left: 270px;
+    top: -20px;
+  }
+  .final {
+    position: absolute;
+    top: 30%;
+    left: 100%;
+    margin-left: 50px;
+}
+  .final h6 {
+    text-align: left;
+    width: 500px
+  }
+}
