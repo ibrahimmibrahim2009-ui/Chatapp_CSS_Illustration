@@ -1,5 +1,5 @@
 # Chatapp_CSS_Illustration
-This is a premium-looking landing page showcasing a chat app interface. The design is fully responsive and interactive, as it's design for both mobile and laptop screens, and include radio buttons and textbox. The colors are fully matching and beautiful.
+This is a premium-looking landing page showcasing a chat app interface. The design is suitable for mobile screens only, and include radio buttons and textbox. The colors are fully matching and beautiful.
 
 ## 📱 About the App Content
 The interface illustrates a seamless booking conversation with a dog walker:
